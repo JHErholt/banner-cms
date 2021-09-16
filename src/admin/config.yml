@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/banner"
+public_folder: "/assets/banner"
+collections:
+  - name: "banner"
+    label: "Banner"
+    folder: "src/banner"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Featured Caption", name: "imageAlt", widget: "string" }
