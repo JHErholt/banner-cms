@@ -26,8 +26,6 @@ footer{min-height: 10vh;background-color: rgb(184, 255, 78);}
     width: 100%;
     object-fit: contain;
     position: absolute;
-    top: 70%;
-    transform: translateY(-50%);
 }
 
 .overlay{
